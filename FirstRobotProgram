@@ -1,0 +1,21 @@
+async function startProgram() {
+	setMainLed({ r: 255, g: 35, b: 0 });
+	await roll(0, 60, 2.7);
+	setMainLed({ r: 255, g: 138, b: 8 });
+	await roll(0, -60, 2.7);
+	await delay(2);
+	await roll(90, 60, 2.7);
+	setMainLed({ r: 255, g: 242, b: 6 });
+	await roll(90, -60, 2.7);
+	await delay(2);
+	await roll(180, 60, 2.7);
+	setMainLed({ r: 147, g: 27, b: 255 });
+	await roll(180, -60, 2.7);
+	await delay(2);
+	await roll(270, 60, 2.7);
+	setMainLed({ r: 25, g: 80, b: 255 });
+	await roll(270, -60, 2.7);
+	setMainLed({ r: 6, g: 255, b: 74 });
+	await delay(2);
+	await speak('Pretty good right?', false);
+}
